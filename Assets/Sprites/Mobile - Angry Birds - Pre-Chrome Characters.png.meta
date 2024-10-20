@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -950,7 +950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_40
+      name: redBird_big_1
       rect:
         serializedVersion: 2
         x: 634
@@ -1307,7 +1307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_57
+      name: redBird_big_2
       rect:
         serializedVersion: 2
         x: 813
@@ -1643,7 +1643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_73
+      name: pig_idle_1
       rect:
         serializedVersion: 2
         x: 298
@@ -1958,7 +1958,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_88
+      name: pig_idle_2
       rect:
         serializedVersion: 2
         x: 298
@@ -3050,7 +3050,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_140
+      name: yellow_3
       rect:
         serializedVersion: 2
         x: 732
@@ -3071,7 +3071,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_141
+      name: yellow_4
       rect:
         serializedVersion: 2
         x: 792
@@ -3092,7 +3092,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_142
+      name: yellow_6
       rect:
         serializedVersion: 2
         x: 853
@@ -3449,7 +3449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_159
+      name: yellow_5
       rect:
         serializedVersion: 2
         x: 732
@@ -3512,7 +3512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_162
+      name: red_small_1
       rect:
         serializedVersion: 2
         x: 903
@@ -3533,7 +3533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_163
+      name: red_small_2
       rect:
         serializedVersion: 2
         x: 951
@@ -3869,7 +3869,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_179
+      name: red_small_3
       rect:
         serializedVersion: 2
         x: 956
@@ -3932,7 +3932,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_182
+      name: yellow_1
       rect:
         serializedVersion: 2
         x: 668
@@ -3995,7 +3995,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_185
+      name: red_small_4
       rect:
         serializedVersion: 2
         x: 853
@@ -4016,7 +4016,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_186
+      name: red_small_5
       rect:
         serializedVersion: 2
         x: 903
@@ -4058,11 +4058,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_188
+      name: yellow_2
       rect:
         serializedVersion: 2
         x: 588
-        y: 1
+        y: 2
         width: 68
         height: 52
       alignment: 0
@@ -4182,9 +4182,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_138: -1934271798
       Mobile - Angry Birds - Pre-Chrome Characters_139: 834096112
       Mobile - Angry Birds - Pre-Chrome Characters_14: -1675024852
-      Mobile - Angry Birds - Pre-Chrome Characters_140: 101699431
-      Mobile - Angry Birds - Pre-Chrome Characters_141: -1954042146
-      Mobile - Angry Birds - Pre-Chrome Characters_142: 1928457741
       Mobile - Angry Birds - Pre-Chrome Characters_143: 1233146675
       Mobile - Angry Birds - Pre-Chrome Characters_144: -1795070251
       Mobile - Angry Birds - Pre-Chrome Characters_145: -1878515937
@@ -4202,12 +4199,9 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_156: -1554113657
       Mobile - Angry Birds - Pre-Chrome Characters_157: 1189884896
       Mobile - Angry Birds - Pre-Chrome Characters_158: -389931413
-      Mobile - Angry Birds - Pre-Chrome Characters_159: 669018842
       Mobile - Angry Birds - Pre-Chrome Characters_16: 1827449740
       Mobile - Angry Birds - Pre-Chrome Characters_160: -2127154885
       Mobile - Angry Birds - Pre-Chrome Characters_161: 1553210639
-      Mobile - Angry Birds - Pre-Chrome Characters_162: 951392564
-      Mobile - Angry Birds - Pre-Chrome Characters_163: -1490995985
       Mobile - Angry Birds - Pre-Chrome Characters_164: -1277495287
       Mobile - Angry Birds - Pre-Chrome Characters_165: -621619393
       Mobile - Angry Birds - Pre-Chrome Characters_166: 1960992611
@@ -4224,17 +4218,12 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_176: 723604327
       Mobile - Angry Birds - Pre-Chrome Characters_177: 1497365784
       Mobile - Angry Birds - Pre-Chrome Characters_178: 1731122010
-      Mobile - Angry Birds - Pre-Chrome Characters_179: 1763973856
       Mobile - Angry Birds - Pre-Chrome Characters_18: -947297378
       Mobile - Angry Birds - Pre-Chrome Characters_180: -873477034
       Mobile - Angry Birds - Pre-Chrome Characters_181: 649206310
-      Mobile - Angry Birds - Pre-Chrome Characters_182: 1638641161
       Mobile - Angry Birds - Pre-Chrome Characters_183: 1802268139
       Mobile - Angry Birds - Pre-Chrome Characters_184: 1200585251
-      Mobile - Angry Birds - Pre-Chrome Characters_185: 22994017
-      Mobile - Angry Birds - Pre-Chrome Characters_186: -2089929397
       Mobile - Angry Birds - Pre-Chrome Characters_187: 762875366
-      Mobile - Angry Birds - Pre-Chrome Characters_188: -1929543974
       Mobile - Angry Birds - Pre-Chrome Characters_189: -1833155552
       Mobile - Angry Birds - Pre-Chrome Characters_19: 262190634
       Mobile - Angry Birds - Pre-Chrome Characters_2: -2013271933
@@ -4260,7 +4249,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_38: -54894317
       Mobile - Angry Birds - Pre-Chrome Characters_39: 888173209
       Mobile - Angry Birds - Pre-Chrome Characters_4: -1220376558
-      Mobile - Angry Birds - Pre-Chrome Characters_40: -2114491498
       Mobile - Angry Birds - Pre-Chrome Characters_41: 1054581902
       Mobile - Angry Birds - Pre-Chrome Characters_42: 186082317
       Mobile - Angry Birds - Pre-Chrome Characters_43: 93497562
@@ -4277,7 +4265,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_54: -241075824
       Mobile - Angry Birds - Pre-Chrome Characters_55: 93603748
       Mobile - Angry Birds - Pre-Chrome Characters_56: 701725986
-      Mobile - Angry Birds - Pre-Chrome Characters_57: -374657874
       Mobile - Angry Birds - Pre-Chrome Characters_58: -1620692464
       Mobile - Angry Birds - Pre-Chrome Characters_59: -1389795474
       Mobile - Angry Birds - Pre-Chrome Characters_6: 1073928592
@@ -4294,7 +4281,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_70: -542821150
       Mobile - Angry Birds - Pre-Chrome Characters_71: -1599685089
       Mobile - Angry Birds - Pre-Chrome Characters_72: 1858903388
-      Mobile - Angry Birds - Pre-Chrome Characters_73: -1276290250
       Mobile - Angry Birds - Pre-Chrome Characters_74: -1377149516
       Mobile - Angry Birds - Pre-Chrome Characters_75: -1492101244
       Mobile - Angry Birds - Pre-Chrome Characters_76: -1352847519
@@ -4309,7 +4295,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_85: -750289549
       Mobile - Angry Birds - Pre-Chrome Characters_86: -322168182
       Mobile - Angry Birds - Pre-Chrome Characters_87: 1601153834
-      Mobile - Angry Birds - Pre-Chrome Characters_88: -1548581789
       Mobile - Angry Birds - Pre-Chrome Characters_89: 887272985
       Mobile - Angry Birds - Pre-Chrome Characters_9: -1826775253
       Mobile - Angry Birds - Pre-Chrome Characters_90: 158941351
@@ -4322,6 +4307,21 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_97: 825157203
       Mobile - Angry Birds - Pre-Chrome Characters_98: -1577374130
       Mobile - Angry Birds - Pre-Chrome Characters_99: -961731759
+      pig_idle_1: -1276290250
+      pig_idle_2: -1548581789
+      redBird_big_1: -2114491498
+      redBird_big_2: -374657874
+      red_small_1: 951392564
+      red_small_2: -1490995985
+      red_small_3: 1763973856
+      red_small_4: 22994017
+      red_small_5: -2089929397
+      yellow_1: 1638641161
+      yellow_2: -1929543974
+      yellow_3: 101699431
+      yellow_4: -1954042146
+      yellow_5: 669018842
+      yellow_6: 1928457741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
