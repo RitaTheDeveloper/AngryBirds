@@ -1,19 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour, IDamageable
 {
-    GameManager _gameManager;
+    public Action onDead;
     [field: SerializeField] public float MaxHealth { get; private set; } = 3f;
     [SerializeField] private float _damageTreshold = 0.2f;
 
     private float _currentHealth;
-
-    private void Awake()
-    {
-        _gameManager = FindObjectOfType<GameManager>();
-    }
 
     private void Start()
     {
@@ -32,7 +28,7 @@ public class Health : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        _gameManager.RemoveEnemy(GetComponent<EnemyController>());
+        onDead.Invoke();       
         Destroy(gameObject);
     }
 

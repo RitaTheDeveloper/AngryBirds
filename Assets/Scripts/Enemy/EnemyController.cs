@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Health _enemyHealth;
+
+    private void Awake()
     {
-        
+        _enemyHealth = GetComponent<Health>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        _enemyHealth.onDead += Die;
+    }
+
+    private void OnDisable()
+    {
+        _enemyHealth.onDead -= Die;
+    }
+
+    private void Die()
+    {
+        Actions.OnEnemyKilled(this);
     }
 }

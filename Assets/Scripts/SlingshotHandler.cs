@@ -52,19 +52,19 @@ public class SlingshotHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        if (Mouse.current.leftButton.wasPressedThisFrame && AreaCheck.IsWithinThisArea(_mousePosition, _layerSlingshotArea))
+        _mousePosition = Camera.main.ScreenToWorldPoint(InputManager.MousePosition);
+        if (InputManager.WasLeftMouseButtonPressed && AreaCheck.IsWithinThisArea(_mousePosition, _layerSlingshotArea))
         {
             _clickedWithinArea = true;
         }
 
-        if (Mouse.current.leftButton.isPressed && _clickedWithinArea && _shellOnSlingshot)
+        if (InputManager.IsLeftMousePressed && _clickedWithinArea && _shellOnSlingshot)
         {
             DrawSlingshot();
             PositionAndRotationShell();
         }
 
-        if (Mouse.current.leftButton.wasReleasedThisFrame && _shellOnSlingshot)
+        if (InputManager.WasLeftMouseButtonReleased && _shellOnSlingshot && _clickedWithinArea)
         {
             if (_gameManager.HasAvailableShots())
             {

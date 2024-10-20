@@ -23,6 +23,16 @@ public class GameManager : MonoBehaviour
         _slingshotHandler.Init(this);
     }
 
+    private void OnEnable()
+    {
+        Actions.OnEnemyKilled += RemoveEnemy;
+    }
+
+    private void OnDisable()
+    {
+        Actions.OnEnemyKilled -= RemoveEnemy;
+    }
+
     public void UseShot()
     {
         _shotCounter++;
