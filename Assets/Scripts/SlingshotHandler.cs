@@ -24,6 +24,7 @@ public class SlingshotHandler : MonoBehaviour
 
     [Header("Shell:")]
     [SerializeField] private Shell _shellPrefab;
+    [SerializeField] private Transform _containerShell;
 
     private Vector2 _currentLinesPosition;
     private Vector3 _mousePosition;
@@ -38,10 +39,7 @@ public class SlingshotHandler : MonoBehaviour
     private GameManager _gameManager;
     private void Awake()
     {
-        _leftLineRenderer.enabled = false;
-        _rightLineRenderer.enabled = false;
-
-        SpawnShell();
+        
     }
 
     void Start()
@@ -86,6 +84,12 @@ public class SlingshotHandler : MonoBehaviour
     public void Init(GameManager gameManager)
     {
         _gameManager = gameManager;
+        _leftLineRenderer.enabled = false;
+        _rightLineRenderer.enabled = false;
+
+        RemoveAllShellsFromScene();
+
+        SpawnShell();
     }
 
     private void DrawSlingshot()
@@ -124,6 +128,7 @@ public class SlingshotHandler : MonoBehaviour
         _spawnedShell.gameObject.transform.right = dir;
 
         _shellOnSlingshot = true;
+        _spawnedShell.transform.parent = _containerShell;
     }
 
     private IEnumerator SpawnShellAfterTime()
@@ -136,5 +141,13 @@ public class SlingshotHandler : MonoBehaviour
     {
         _spawnedShell.gameObject.transform.position = _currentLinesPosition + _directionNormalized * _shellPosOffset;
         _spawnedShell.gameObject.transform.right = _directionNormalized;
+    }
+
+    private void RemoveAllShellsFromScene()
+    {
+        foreach (Transform shell in _containerShell)
+        {
+            Destroy(shell.gameObject);
+        }
     }
 }

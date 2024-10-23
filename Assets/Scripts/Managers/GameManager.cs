@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
+    public Action OnWin, OnLose;
+    public Action<int> onUsedShot;
+
     [field:Header("Stats: ")]
     [field:SerializeField] public int MaxNumberOfShots { get; private set; } = 3;
 
@@ -14,13 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
-        foreach (var go in enemies)
-        {
-            _enemies.Add(go);
-        }
-
-        _slingshotHandler.Init(this);
+        Init();
     }
 
     private void OnEnable()
@@ -33,10 +31,23 @@ public class GameManager : MonoBehaviour
         Actions.OnEnemyKilled -= RemoveEnemy;
     }
 
+    public void Init()
+    {
+        _shotCounter = 0;
+        _enemies = new List<EnemyController>();
+        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+        for (int i = 0; i < enemies.Length ; i++)
+        {
+            _enemies.Add(enemies[i]);                      
+        }
+        _slingshotHandler.Init(this);
+    }
+
     public void UseShot()
     {
         _shotCounter++;
         CheckForLastShot();
+        onUsedShot.Invoke(MaxNumberOfShots - _shotCounter);
     }
 
     public bool HasAvailableShots()
@@ -57,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator CheckAfterWaitTime()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
 
         if (_enemies.Count == 0)
         {
@@ -78,12 +89,15 @@ public class GameManager : MonoBehaviour
 
     private void WinGame()
     {
+        OnWin.Invoke();
         Debug.Log("победа!");
     }
 
     private void LoseGame()
     {
+        OnLose.Invoke();
         Debug.Log("поражение!");
+        ClearEnemies();
     }
 
     private void CheckForAllDeadEnemies()
@@ -91,6 +105,16 @@ public class GameManager : MonoBehaviour
         if (_enemies.Count == 0)
         {
             WinGame();
+        }
+    }
+
+    public void ClearEnemies()
+    {
+        EnemyController[] enemies = FindObjectsOfType<EnemyController>();
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            Destroy(enemies[i]);
+            _enemies.Remove(enemies[i].GetComponent<EnemyController>());                       
         }
     }
 
