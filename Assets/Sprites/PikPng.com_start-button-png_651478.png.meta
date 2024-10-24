@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,13 +144,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PikPng.com_start-button-png_651478_1
+      name: playBtn
       rect:
         serializedVersion: 2
-        x: 450
-        y: 711
-        width: 250
-        height: 253
+        x: 87
+        y: 687
+        width: 270
+        height: 132
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,9 +253,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 579
-        y: 558
+        y: 571
         width: 106
-        height: 111
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,9 +505,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 252
-        y: 227
+        y: 238
         width: 104
-        height: 111
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,9 +526,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 358
-        y: 229
+        y: 240
         width: 105
-        height: 110
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,9 +694,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 359
-        y: 117
+        y: 136
         width: 103
-        height: 109
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,13 +711,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PikPng.com_start-button-png_651478_28
+      name: search
       rect:
         serializedVersion: 2
         x: 466
-        y: 151
+        y: 167
         width: 77
-        height: 82
+        height: 66
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +756,10 @@ TextureImporter:
       name: menu
       rect:
         serializedVersion: 2
-        x: 1
-        y: 40
-        width: 114
-        height: 119
+        x: 8
+        y: 59
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +777,10 @@ TextureImporter:
       name: settings
       rect:
         serializedVersion: 2
-        x: 117
-        y: 40
-        width: 114
-        height: 119
+        x: 124
+        y: 61
+        width: 101
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,9 +820,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 466
-        y: 68
+        y: 77
         width: 77
-        height: 81
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PikPng.com_start-button-png_651478_36
+      name: settings2
       rect:
         serializedVersion: 2
         x: 466
@@ -918,7 +931,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PikPng.com_start-button-png_651478_1: -1360100560
       PikPng.com_start-button-png_651478_10: -318594939
       PikPng.com_start-button-png_651478_11: -491747920
       PikPng.com_start-button-png_651478_12: 2086867620
@@ -933,11 +945,9 @@ TextureImporter:
       PikPng.com_start-button-png_651478_24: -1271315558
       PikPng.com_start-button-png_651478_25: 604524718
       PikPng.com_start-button-png_651478_26: -930228810
-      PikPng.com_start-button-png_651478_28: 1804176999
       PikPng.com_start-button-png_651478_29: -1818504953
       PikPng.com_start-button-png_651478_3: 1949006907
       PikPng.com_start-button-png_651478_34: 1772145234
-      PikPng.com_start-button-png_651478_36: -1895533580
       PikPng.com_start-button-png_651478_37: -850944952
       PikPng.com_start-button-png_651478_4: -1910968286
       PikPng.com_start-button-png_651478_5: 127760317
@@ -949,12 +959,15 @@ TextureImporter:
       menu: 499088008
       next btn: -1396814051
       play big: -1131650364
+      playBtn: -1360100560
       previus bnt 2: -717366445
       previus btn: -2111618457
       quit: -1818542941
       restart btn: 888810501
       restart btn dark: -2077039206
+      search: 1804176999
       settings: 94176867
+      settings2: -1895533580
       sound btn: 1255298589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

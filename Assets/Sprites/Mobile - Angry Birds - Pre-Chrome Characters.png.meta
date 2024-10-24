@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2756,7 +2769,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Angry Birds - Pre-Chrome Characters_126
+      name: sadPig
       rect:
         serializedVersion: 2
         x: 298
@@ -4164,7 +4177,6 @@ TextureImporter:
       Mobile - Angry Birds - Pre-Chrome Characters_123: 1268922855
       Mobile - Angry Birds - Pre-Chrome Characters_124: -1069998457
       Mobile - Angry Birds - Pre-Chrome Characters_125: -922836526
-      Mobile - Angry Birds - Pre-Chrome Characters_126: 1587790600
       Mobile - Angry Birds - Pre-Chrome Characters_127: 1038080377
       Mobile - Angry Birds - Pre-Chrome Characters_128: 1455662435
       Mobile - Angry Birds - Pre-Chrome Characters_129: -39374108
@@ -4314,6 +4326,7 @@ TextureImporter:
       red_small_3: 1763973856
       red_small_4: 22994017
       red_small_5: -2089929397
+      sadPig: 1587790600
       slingsjot_left: 4944253
       slongshot_right: -1656466007
       yellow_1: 1638641161

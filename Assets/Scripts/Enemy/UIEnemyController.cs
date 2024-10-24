@@ -9,15 +9,18 @@ public class UIEnemyController : MonoBehaviour
 
     private void OnEnable()
     {
-        _enemyHealth.onDead += DeathEffect;
+        if (_enemyHealth)
+            _enemyHealth.onDead += DeathEffect;
     }
     private void OnDisable()
     {
-        _enemyHealth.onDead -= DeathEffect;
+        if (_enemyHealth)
+            _enemyHealth.onDead -= DeathEffect;
     }
 
     private void DeathEffect()
     {
+        AudioManager.instance.PlaySound("PigDied");
         Instantiate(_deathEffect, transform.position, Quaternion.identity);
     }
 }

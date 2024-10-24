@@ -5,8 +5,8 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-    public Action OnWin, OnLose;
-    public Action<int> onUsedShot;
+    public Action OnWin, OnLose, OnStart;
+    public Action<int> onUsedShot, OnStartLevel;
 
     [field:Header("Stats: ")]
     [field:SerializeField] public int MaxNumberOfShots { get; private set; } = 3;
@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SlingshotHandler _slingshotHandler;
     private int _shotCounter;
     private List<EnemyController> _enemies = new List<EnemyController>();
+    private bool _levelCompleted;
+    private bool _isPlaying;
 
     private void Start()
     {
@@ -32,7 +34,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void Init()
-    {
+    {        
+        _isPlaying = true;
+        _levelCompleted = false;
         _shotCounter = 0;
         _enemies = new List<EnemyController>();
         EnemyController[] enemies = FindObjectsOfType<EnemyController>();
@@ -40,7 +44,9 @@ public class GameManager : MonoBehaviour
         {
             _enemies.Add(enemies[i]);                      
         }
+        _slingshotHandler.enabled = true;
         _slingshotHandler.Init(this);
+        OnStartLevel.Invoke(MaxNumberOfShots);
     }
 
     public void UseShot()
@@ -58,11 +64,18 @@ public class GameManager : MonoBehaviour
             return false;
     }
 
-    private void CheckForLastShot()
+    private bool CheckForLastShot()
     {
         if (_shotCounter == MaxNumberOfShots)
         {
-            StartCoroutine(CheckAfterWaitTime());
+            _slingshotHandler.enabled = false;
+            if (_isPlaying && !_levelCompleted)
+                StartCoroutine(CheckAfterWaitTime());
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
@@ -74,7 +87,7 @@ public class GameManager : MonoBehaviour
         {
             WinGame();
         }
-        else
+        else if(!_levelCompleted && _isPlaying)
         {
             LoseGame();
         }
@@ -89,15 +102,23 @@ public class GameManager : MonoBehaviour
 
     private void WinGame()
     {
-        OnWin.Invoke();
+        _isPlaying = false;
+        _levelCompleted = true;        
+        _slingshotHandler.enabled = false;
         Debug.Log("победа!");
+        OnWin.Invoke();
     }
 
     private void LoseGame()
     {
-        OnLose.Invoke();
+        if(_isPlaying && !_levelCompleted)
+        {
+            OnLose.Invoke();
+        }
+        _isPlaying = false;
+        _slingshotHandler.enabled = false;
         Debug.Log("поражение!");
-        ClearEnemies();
+        ClearEnemies();        
     }
 
     private void CheckForAllDeadEnemies()

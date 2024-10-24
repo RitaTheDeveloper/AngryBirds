@@ -10,7 +10,6 @@ public class UIGameResults : MonoBehaviour
 
     [Header("Scripts: ")]
     [SerializeField] private LevelManager _levelManager;
-
     private void Start()
     {
         Off();
@@ -18,6 +17,7 @@ public class UIGameResults : MonoBehaviour
 
     public void LevelCompleted()
     {
+        AudioManager.instance.PlaySound("LevelCompleted");
         On();
         DisableAllObjs();
         _winObj.SetActive(true);
@@ -25,6 +25,7 @@ public class UIGameResults : MonoBehaviour
 
     public void LevelFailed()
     {
+        AudioManager.instance.PlaySound("LevelFailed");
         On();
         DisableAllObjs();
         _loseObj.SetActive(true);

@@ -13,12 +13,15 @@ public class EnemyController : MonoBehaviour
 
     private void OnEnable()
     {
-        _enemyHealth.onDead += Die;
+        if(_enemyHealth)
+            _enemyHealth.onDead += Die;
+
     }
 
     private void OnDisable()
     {
-        _enemyHealth.onDead -= Die;
+        if (_enemyHealth)
+            _enemyHealth.onDead -= Die;
     }
 
     private void Die()

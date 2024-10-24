@@ -68,7 +68,7 @@ public class SlingshotHandler : MonoBehaviour
             {
                 _clickedWithinArea = false;
                 _spawnedShell.LaunchShell(_direction, _launchForce);
-
+                AudioManager.instance.PlaySound("birdIsLaunched");
                 _gameManager.UseShot();
                 //Time.timeScale = 0.1f;
                 _shellOnSlingshot = false;

@@ -29,7 +29,7 @@ public class Health : MonoBehaviour, IDamageable
     private void Die()
     {
         onDead.Invoke();       
-        Destroy(gameObject);
+        Destroy(gameObject, 0.1f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

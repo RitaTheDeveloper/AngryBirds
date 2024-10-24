@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -236,13 +249,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ABPC_birds_melody_6
+      name: iconBird
       rect:
         serializedVersion: 2
-        x: 0
-        y: 36
-        width: 119
-        height: 137
+        x: 139
+        y: 183
+        width: 67
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,9 +349,9 @@ TextureImporter:
       ABPC_birds_melody_3: -1119517450
       ABPC_birds_melody_4: -434977435
       ABPC_birds_melody_5: 1029190232
-      ABPC_birds_melody_6: 1026335987
       ABPC_birds_melody_7: -1277796054
       ABPC_birds_melody_9: -604366570
+      iconBird: 1026335987
       lifeIcon: -2101467494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
